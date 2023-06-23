@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+.filterDiv 
+{   float: left; color: #ffffff; width: 33.3%;
+	padding: 1%; box-sizing: border-box; text-align: center; display: none; }
+
+
+.show {
+    display: block;
+}
+
+.container 
+{   overflow: hidden; width:85%;}
+
+/* Style the buttons */
+.btn 
+{	border: none; outline: none; padding: 3%; box-sizing: border-box; cursor: pointer; text-align: left; color:#8F8F8F; font-size: 25px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; font-weight: lighter; }
+
+
+@media screen and (max-width: 1000px) {
+  .btn {
+     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .btn {
+     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .btn {
+     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .btn {
+     font-size: 12px;
+  }
+}
+
+.btn:hover 
+{   color: black;
+	transition-duration: 0.7s;}
+
+.btn.active 
+{   color: black;}
+
+.f
+{	width: 15%;}
+
+.f ul
+{	list-style: none; padding: 3%; box-sizing: border-box;}
+
+.f button
+{	background-color: white;}
+
+/************************************************************/
+
+
+.q1
+{	width:100%;  margin-top: 1%; line-height: 120%; 
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" ;}
+
+.q2
+{	width: 100%; text-align: left;}
+
+.q3
+{	width: 100%; text-align: right; font-size: 13px; color:#6C6C6C;}
+
+.q5:hover
+{	color: #454545;}
+
+.q5 
+{	text-decoration: none; color: black;}
+
+.q4
+{	margin-bottom: 2%; width: 100%; font-size: 22px;}
+
+.qimg:hover
+{	filter: contrast(1.2);}
+
+.q6
+{	font-size: 13px; color:#6C6C6C; margin-top: 1%; width:100%; }
+
+@media screen and (max-width: 1000px) {
+  .q4 {
+     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .q4 {
+     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .q4 {
+     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .q3 {
+     font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .q3 {
+     font-size: 10px;
+  }
+	
+@media screen and (max-width: 800px) {
+  .q6 {
+     font-size: 11px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

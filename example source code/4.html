@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>4</title>
+		<link href="4.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		
+		<div id="myNav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+			<a href="#">All Destination</a>
+			<a href="#">Europe</a>
+			<a href="#">Asia</a>
+			<a href="#">Mexico</a>
+			<a href="#">France</a>
+			<a href="#">Italy</a>
+			<a href="#">North America</a>
+			<a href="#">Asia</a>
+			<a href="#">Greece</a>
+		  </div>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Filter</span>
+		
+		<script>
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+
+	</body>
+</html>

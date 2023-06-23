@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Villas Backup</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../Pic/Blue Football Club League Badge (3).png">
+		<link href="Hotels and Villas.css" rel="stylesheet" type="text/css">
+		<link href="../Home.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="body">
+			
+			<!-------------------------------------------------------Menu--------------------------------------------------->
+			<div class="Menu">
+				<div id="myNav" class="overlay">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <div class="overlay-content">
+					<a href="../Home.html">KOBU</a>
+					<a href="example source code/Hotels.html">Hotels</a>
+					<a href="Villas.html">Villas</a>
+					<a href="../Account.html">User Account</a>
+					<a href="../Contact.html">Contact Us</a>
+					<a href="../About.html">About &amp; FAQ</a>
+				  </div>
+				</div>
+				<span style="font-size:28px;cursor:pointer; margin-left: 3%;" onclick="openNav()"> &#9776; </span>
+		
+				<div class="Menu2"> KOBU </div>
+			</div>
+			<div style="width: 100%; display: flex; margin-top: 8%;"> 
+				<div id="myBtnContainer" class="f">
+					<ul>
+						<li> 
+							<button class="btn active" onclick="filterSelection('all')"> All Destination </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Mexico')"> Mexico </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Morocco')"> Morocco </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Italy')"> Italy </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Africa')"> Africa </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Greece')"> Greece </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Spain')"> Spain </button>
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('North America')"> North America </button> 
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="container">
+					<!--**********************************-->
+					<div class="filterDiv Africa">
+						<a href="#Arijiju Retreat" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/_arijiju_retreat_kenya_854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Arijiju Retreat" class="q5"> 
+									<div class="q4"> Arijiju Retreat </div>
+								</a> 
+								<div class="q6"> Borana Conservancy, Kenya </div>  
+							</div>
+							<div class="q3"> From $9500/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Spain">
+						<a href="#Finca La Inika" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/_finca_la_inika_ibiza_spain_854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Finca La Inika" class="q5"> 
+									<div class="q4"> Finca La Inika </div>
+								</a> 
+								<div class="q6"> Ibiza, Spain </div>  
+							</div>
+							<div class="q3"> From $7150/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Spain">
+						<a href="#Es Bec d’Aguila" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/es pec de agulia.jpeg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Es Bec d’Aguila" class="q5"> 
+									<div class="q4"> Es Bec d’Aguila </div>
+								</a> 
+								<div class="q6"> Menorca, Spain </div>  
+							</div>
+							<div class="q3"> From $1550/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#Monolithoi" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/monolithoi-villa2-18-scaled-2-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Monolithoi" class="q5"> 
+									<div class="q4"> Monolithoi </div>
+								</a> 
+								<div class="q6"> Messenia, Greece </div>  
+							</div>
+							<div class="q3"> From $445/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Morocco">
+						<a href="#Villa D" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/_villad_marrakech_morocco_854x854.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Villa D" class="q5"> 
+									<div class="q4"> Villa D </div>
+								</a> 
+								<div class="q6"> Marrakech, Morocco </div>  
+							</div>
+							<div class="q3"> From $3500/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Mexico">
+						<a href="#Greycape by James Perse " class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/greycape.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Greycape by James Perse " class="q5"> 
+									<div class="q4"> Greycape by James Perse  </div>
+								</a> 
+								<div class="q6"> Baja California Sur, Mexico </div>  
+							</div>
+							<div class="q3"> From $8000/nt </div>
+						</div>
+					</div>
+					<!--***********************************-->
+
+					<div class="filterDiv Italy">
+						<a href="#Casa Soleto" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/sofa-casa-soleto-salva-lopez-puglia-italy-854x854.jpeg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Casa Soleto" class="q5"> 
+									<div class="q4"> Casa Soleto </div>
+								</a> 
+								<div class="q6"> Puglia, Italy </div>  
+							</div>
+							<div class="q3"> From $700/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#Villa Tama" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/entry-villa-tama-mykonos-greece-2-854x854.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Villa Tama" class="q5"> 
+									<div class="q4"> Villa Tama </div>
+								</a> 
+								<div class="q6"> Mykonos, Greece </div>  
+							</div>
+							<div class="q3"> From $8000/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Italy">
+						<a href="#Casanguilla" class="qimg">
+							<img style="width: 100%;" src="../Pic/villa page/DSC_4159_A-2-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Casanguilla" class="q5"> 
+									<div class="q4"> Casanguilla  </div>
+								</a> 
+								<div class="q6"> Puglia, Italy </div>  
+							</div>
+							<div class="q3"> From $450/nt </div>
+						</div>
+					</div>
+					<!--***********************************-->
+
+				</div>
+			</div>
+			<!------------------------------------------lastkobu------------------------------------->
+			
+			<img style="width: 100%; margin-top: 10%;" src="Kobu.PNG">
+			
+			<!------------------------------------------------Footer------------------------------------->
+			<div class="footer">
+				<a href="../Privacy .html" target="_blank" class="fa"> PRIVACY </a>
+				<a href="../Disclosure .html" target="_blank" class="fa"> DISCLOSURE </a>
+				<a href="../Cookies .html" target="_blank" class="fa"> COOKIES </a>
+			</div>
+			
+		<!--------------------------------------------Body----------------------------------------->
+		</div>
+		
+
+		<!------------------------------------------------Javascript-------------------------------------------------->
+		<script>
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+		
+		<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			  });
+			}
+		</script>
+
+	</body>
+</html>

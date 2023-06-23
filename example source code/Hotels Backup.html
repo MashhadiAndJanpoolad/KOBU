@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hotels Backup</title>
+		<link href="Hotels and Villas.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" type="image/x-icon" href="../Pic/Blue Football Club League Badge (3).png">
+		<link href="../Home.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="body">
+			
+			<!-------------------------------------------------------Menu--------------------------------------------------->
+			<div class="Menu">
+				<div id="myNav" class="overlay">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <div class="overlay-content">
+					<a href="../Home.html">KOBU</a>
+					<a href="example source code/Hotels.html">Hotels</a>
+					<a href="Villas.html">Villas</a>
+					<a href="../Account.html">User Account</a>
+					<a href="../Contact.html">Contact Us</a>
+					<a href="../About.html">About &amp; FAQ</a>
+				  </div>
+				</div>
+				<span style="font-size:28px;cursor:pointer; margin-left: 3%;" onclick="openNav()"> &#9776; </span>
+		
+				<div class="Menu2"> KOBU </div>
+			</div>
+			<div style="width: 100%; display: flex; margin-top: 8%;"> 
+				<div id="myBtnContainer" class="f">
+					<ul>
+						<li> 
+							<button class="btn active" onclick="filterSelection('all')"> All Destination </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Mexico')"> Mexico </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('France')"> France </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Italy')"> Italy </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Asia')"> Asia </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Greece')"> Greece </button> 
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('Europe')"> Europe </button>
+						</li>
+
+						<li> 
+							<button class="btn" onclick="filterSelection('North America')"> North America </button> 
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="container">
+					<!--**********************************-->
+					<div class="filterDiv Mexico North America">
+						<a href="#Carlton Cannas" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Mexico/campus.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Carlton Cannas" class="q5"> 
+									<div class="q4"> Campos Polanco </div>
+								</a> 
+								<div class="q6"> Mexico City, Mexico </div>  
+							</div>
+							<div class="q3"> From $330/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Italy">
+						<a href="#Castello di Reschio" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Italy/hotel-castello-di-reschio_dezeen_1704_col_2-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Castello di Reschio" class="q5"> 
+									<div class="q4"> Castello di Reschio </div>
+								</a> 
+								<div class="q6"> Umbria, Italy </div>  
+							</div>
+							<div class="q3"> From $800/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#Pārocks" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Greece/hero-parocks-paros-greece-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Pārocks" class="q5"> 
+									<div class="q4"> Pārocks </div>
+								</a> 
+								<div class="q6"> Paros, Greece </div>  
+							</div>
+							<div class="q3"> From $300/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Europe">
+						<a href="#Hotel Sanders" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Europe/hotol sanders.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Hotel Sanders" class="q5"> 
+									<div class="q4"> Hotel Sanders </div>
+								</a> 
+								<div class="q6"> Copenhagen, Denmark </div>  
+							</div>
+							<div class="q3"> From $300/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Asia">
+						<a href="#Lost Lindenberg" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Asia/lost-lindenberg-2-1-854x854.jpeg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Lost Lindenberg" class="q5"> 
+									<div class="q4"> Lost Lindenberg </div>
+								</a> 
+								<div class="q6"> Bali, Indonesia </div>  
+							</div>
+							<div class="q3"> From $300/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#Parīlio Hotel" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Greece/parilio-hotel-paros_jul_gallery-5-scaled-1-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Parīlio Hotel" class="q5"> 
+									<div class="q4"> Parīlio Hotel </div>
+								</a> 
+								<div class="q6"> Paros, Greece </div>  
+							</div>
+							<div class="q3"> From $280/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv France">
+						<a href="#Hôtel Lou Pinet" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/France/Lou-Pinet-2-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Hôtel Lou Pinet" class="q5"> 
+									<div class="q4">  Hôtel Lou Pinet </div>
+								</a> 
+								<div class="q6"> Saint Tropez, France </div>  
+							</div>
+							<div class="q3"> From $530/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Italy">
+						<a href="#Monteverdi Tuscany" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Italy/tuscany-bouique-hotel-michael-cioffi-ilaria-miani_dezeen_2364_col_30-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Monteverdi Tuscany" class="q5"> 
+									<div class="q4"> Monteverdi Tuscany </div>
+								</a> 
+								<div class="q6"> Province of Siena, Italy </div>  
+							</div>
+							<div class="q3"> From $750/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Asia">
+						<a href="#NIHI Sumba" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Asia/nihi sumba.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#NIHI Sumba" class="q5"> 
+									<div class="q4"> NIHI Sumba </div>
+								</a> 
+								<div class="q6"> Sumba Island, Indonesia </div>  
+							</div>
+							<div class="q3"> From $895/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#Olea All Suite Hotel" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Greece/olea.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Olea All Suite Hotel" class="q5"> 
+									<div class="q4"> Olea All Suite Hotel </div>
+								</a> 
+								<div class="q6"> Zakynthos, Greece </div>  
+							</div>
+							<div class="q3"> From $250/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Europe">
+						<a href="#August" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Europe/19-04-August-Antwerp-6065-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#August" class="q5"> 
+									<div class="q4"> August </div>
+								</a> 
+								<div class="q6"> Antwerp, Belgium </div>  
+							</div>
+							<div class="q3"> From $125/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv North America Mexico">
+						<a href="#Be Tulum" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/North America/be tulum.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Be Tulum" class="q5"> 
+									<div class="q4"> Be Tulum </div>
+								</a> 
+								<div class="q6"> Tulum, Mexico </div>  
+							</div>
+							<div class="q3"> From $300/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Mexico North America">
+						<a href="#Carlton Cannas" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Mexico/Hotel-Esencia-2-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Carlton Cannas" class="q5"> 
+									<div class="q4">  Hotel Esencia </div>
+								</a> 
+								<div class="q6"> Quintana Roo, Mexico </div>  
+							</div>
+							<div class="q3"> From $1000/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#The Wild" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Greece/wild_nofilter-2_@fkalliope-1-854x854.jpeg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#The Wild " class="q5"> 
+									<div class="q4"> The Wild  </div>
+								</a> 
+								<div class="q6"> Mýkonos, Greece </div>  
+							</div>
+							<div class="q3"> From $200/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv France">
+						<a href="#Carlton Cannes" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/France/hero-carlton-cannes-france-854x854.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Carlton Cannes " class="q5"> 
+									<div class="q4"> Carlton Cannes  </div>
+								</a> 
+								<div class="q6"> Cannes, France </div>  
+							</div>
+							<div class="q3"> From $600/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv North America">
+						<a href="#Aman New York" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/North America/Aman-New-York-1-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Aman New York" class="q5"> 
+									<div class="q4"> Aman New York </div>
+								</a> 
+								<div class="q6"> Manhattan, New York </div>  
+							</div>
+							<div class="q3"> From $2600/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Italy">
+						<a href="#Forestis" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Italy/foresties.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Forestis" class="q5"> 
+									<div class="q4"> Forestis </div>
+								</a> 
+								<div class="q6"> Dolomites, Italy </div>  
+							</div>
+							<div class="q3"> From $350/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Mexico">
+						<a href="#Tulum Treehouse " class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Mexico/tulum tree house.jpeg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Tulum Treehouse " class="q5"> 
+									<div class="q4">  Tulum Treehouse </div>
+								</a> 
+								<div class="q6"> Tulum, Mexico </div>  
+							</div>
+							<div class="q3"> From $280/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Europe">
+						<a href="#The Cōmodo" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Europe/comodo_common-spaces_lobby-lounge-ret-1-854x854.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#The Cōmodo" class="q5"> 
+									<div class="q4"> The Cōmodo </div>
+								</a> 
+								<div class="q6"> Bad Gastein, Austria </div>  
+							</div>
+							<div class="q3"> From $250/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#Casa Cook Rhodes" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Greece/casa-cook-rhodes-greece-1-854x854.jpeg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Casa Cook Rhodes" class="q5"> 
+									<div class="q4"> Casa Cook Rhodes </div>
+								</a> 
+								<div class="q6"> Rhodes, Greece </div>  
+							</div>
+							<div class="q3"> From $300/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Asia">
+						<a href="#Patina Maldives" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Asia/patina-pool-854x854.jpg">
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Patina Maldives" class="q5"> 
+									<div class="q4"> Patina Maldives </div>
+								</a> 
+								<div class="q6"> Fari Islands, Maldives </div>  
+							</div>
+							<div class="q3"> From $1400/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv North America">
+						<a href="#Tourists" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/North America/Tourists_22_Lodge_022-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Tourists" class="q5"> 
+									<div class="q4"> Tourists </div>
+								</a> 
+								<div class="q6"> North Adams, Massachusetts </div>  
+							</div>
+							<div class="q3"> From $280/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Mexico">
+						<a href="#Carlton Cannas" class="qimg"> 
+							<img style="width: 100%;" src="../Pic/Hotel page/Mexico/hotelito musa.jpg" >
+						</a>
+
+						<div class="q1">
+							<div class="q2">
+								<a href="#Carlton Cannas" class="q5"> 
+									<div class="q4"> Hotelito MUSA  </div>
+								</a> 
+								<div class="q6"> Guerrero, Mexico </div>  
+							</div>
+							<div class="q3"> From $475/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv France">
+						<a href="#Hôtel National Des Arts" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/France/est-living-travel-hotel-des-arts-et-metieres-Lobby-2-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Hôtel National Des Arts" class="q5"> 
+									<div class="q4">  Hôtel National Des Arts </div>
+								</a> 
+								<div class="q6"> Paris, France </div>  
+							</div>
+							<div class="q3"> From $230/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Mexico">
+						<a href="#Carlton Cannas" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Mexico/OneOnly_Mandarina_Cover__-854x854.jpeg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Carlton Cannas" class="q5"> 
+									<div class="q4">  One and Only Mandarina </div>
+								</a> 
+								<div class="q6"> Riviera Nayarit, Mexico </div>  
+							</div>
+							<div class="q3"> From $1450/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv Greece">
+						<a href="#ACRO Suites" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/Greece/acrosuties.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#ACRO Suites" class="q5"> 
+									<div class="q4"> ACRO Suites </div>
+								</a> 
+								<div class="q6"> Crete, Greece </div>  
+							</div>
+							<div class="q3"> From $370/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+
+					<div class="filterDiv North America">
+						<a href="#Nine Orchard" class="qimg">
+							<img style="width: 100%;" src="../Pic/Hotel page/North America/nine-orchard-lobby-4-854x854.jpg" >
+						</a>
+						<div class="q1">
+							<div class="q2">
+								<a href="#Nine Orchard" class="q5"> 
+									<div class="q4"> Nine Orchard </div>
+								</a> 
+								<div class="q6"> Manhattan, New York </div>  
+							</div>
+							<div class="q3"> From $575/nt </div>
+						</div>
+					</div>
+
+					<!--***********************************-->
+				</div>
+			</div>
+			<!------------------------------------------lastkobu------------------------------------->
+			
+			<img style="width: 100%; margin-top: 10%;" src="Kobu.PNG">
+			
+			<!------------------------------------------------Footer------------------------------------->
+			<div class="footer">
+				<a href="../Privacy .html" target="_blank" class="fa"> PRIVACY </a>
+				<a href="../Disclosure .html" target="_blank" class="fa"> DISCLOSURE </a>
+				<a href="../Cookies .html" target="_blank" class="fa"> COOKIES </a>
+			</div>
+			
+		<!--------------------------------------------Body----------------------------------------->
+		</div>
+		
+
+		<!------------------------------------------------Javascript-------------------------------------------------->
+		<script>
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+		
+		<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("filterDiv");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+				  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			  });
+			}
+		</script>
+
+	</body>
+</html>

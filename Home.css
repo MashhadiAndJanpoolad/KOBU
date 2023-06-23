@@ -1,0 +1,699 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+   font-family: myFirstFont;
+   src: url('Font/Nexa-Heavy.ttf'), url('Font/Nexa-Heavy.eot'), url('Font/Nexa-Heavy.woff'), url('Font/Nexa-Heavy.woff2');
+}
+@font-face {
+   font-family: mySecondFont;
+   src: url('Font/Nexa-ExtraLight.ttf'), url('Font/Nexa-ExtraLight.eot'), url('Font/Nexa-ExtraLight.woff'), url('Font/Nexa-ExtraLight.woff2');
+}
+
+/***************************************************Menu************************************************************/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/********************************************************************************/
+.body
+{	width: 100%; margin: 0px; } 
+
+.Div
+{	width: 100%;}
+
+.Menu
+{
+	width: 100%;
+	background-color: white;
+	background-attachment: fixed;
+	backface-visibility: visible;
+	background-blend-mode: color;
+	background-size: cover;
+	font-family: mySecondFont;
+	font-size: 12px;
+	color: black;
+	display: flex;
+	overflow: hidden;
+  	position: fixed;
+  	top: 0;
+	border-bottom:thin solid black;
+	z-index: 1;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+  .Menu {
+     width: 100%; margin-left: 0.7%;
+  }
+}
+
+.Menu2
+{
+	width:100%;
+	text-align: center;
+	font-size: 30px;
+	font-family: myFirstFont;
+	box-sizing: border-box;
+	padding-right: 4%;
+}
+
+.Menu3
+{	width: 3%; }
+
+@media screen and (max-width: 600px) {
+  .Menu {
+     width: 98.5%; margin-right: 1.5%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .Menu a {
+		font-size: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Menu {
+    font-size: 9px; width: 98.5%; margin-right: 1.5%;
+  }
+}
+
+
+/*****************************************************/
+
+#dkobu
+{
+	width: 100%; margin: 0px; display: block;
+}
+
+#kobu
+{
+	font-size: 480px; margin-top: 0px; font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; font-weight: bold; text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #kobu {
+	  font-size: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #kobu {
+     font-size: 400px;
+  }
+}
+
+/************************************************************/
+
+#o1
+{
+	width: 100%; color:#434343; font-size: 15px;font-family: MySecondFont; box-sizing: border-box; padding-left: 3%; margin-top:1%;
+}
+@media screen and (max-width: 600px) {
+  #o1 {
+	  font-size: 11px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #o1 {
+     font-size: 12px;
+  }
+}
+
+#o2
+{
+	width:94%; margin-left: 3%; margin-right: 3%; box-sizing: border-box; margin-top: 1%; filter:brightness(1.2);
+}
+
+#o2 img
+{	width:100%;}
+
+#o2 :hover
+{	filter: contrast(1.1)}
+
+
+#o3
+{	width: 100%; padding-left: 3%; padding-right: 3%; box-sizing: border-box; display: flex; padding-bottom: 6%; border-bottom: thin solid black; 
+	margin-top: 1%;}
+
+#o31
+{	width: 50%; text-align: left; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+
+#o32
+{	width: 50%; text-align: right; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" ; 	font-size: 12.5px; color:#454545; padding-top: 2%; box-sizing: border-box; }
+
+#arrow
+{	width: 20px; }
+
+#mandarina
+{	text-decoration: none; color: #101010; font-size: 24px; display: flex; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" ;}
+
+#mandarina:hover
+{	color: #454545; }
+
+/******************************************************Hotels***************************************************/
+
+#hotels
+{	width: 94%; margin-left: 3%; margin-right: 3%; margin-top: 4%; display: flex; box-sizing: border-box;
+	font-family:MySecondFont;}
+
+#hotels1
+{	width: 100%; display: block;}
+
+#hotels2
+{	width: 100%; display: block;}
+
+#hotels11
+{	width:100%; padding-right: 45%; box-sizing: border-box;}
+
+#hotels11 h1
+{	font-size: 75px; margin-bottom: 0%; 
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";;}
+
+#hotels11 p
+{	margin-top: 1%; text-align: justify; font-size: 11px; font-weight: 600;}
+
+
+
+#hotels21
+{	width: 50%; margin-right: 45%; margin-top: 30%; margin-left: 5%; box-sizing: border-box;}
+
+#hotels21 img
+{	width: 100%;}
+
+#hotels21 :hover
+{	filter: brightness(1.1);}
+
+
+#hotels12
+{	width: 60%; margin-left: 15%; margin-top: 25%; margin-right: 15%; box-sizing: border-box;}
+
+#hotels12 img
+{	width: 100%;}
+
+#hotels12 :hover
+{	filter: contrast(1.1);}
+
+#hotels22
+{	width: 60%; margin-left: 35%; margin-top: 15%; margin-right: 5%;}
+#hotels22 img
+{	width: 100%;}
+
+#hotels22 :hover
+{	filter: brightness(1.1);}
+
+#hotels13
+{	width: 50%; margin-left: 50%; margin-top: 15%; box-sizing: border-box;}
+
+#hotels13img
+{	width: 100%;}
+
+#hotels13 :hover
+{	filter: contrast(1.1);}
+
+
+.h1
+{	width: 100%; display: flex;}
+.h2
+{	width: 70%; text-align: left;}
+.h5
+{
+	width: 30%; text-align: right; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" ; font-size: 12px; color:#454545; padding-top: 6%; box-sizing: border-box; }
+
+
+.h3
+{	text-decoration: none; color: #101010; display: flex;font-size: 25px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+
+
+.h3:hover
+{	color: #454545;}
+
+
+/*******************************************************************************************/
+
+#viewallhotels
+{	width:100%; font-size: 30px; padding-right: 2%; box-sizing: border-box; color: black;  padding-bottom: 2%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; text-align: right; }
+
+#viewallhotels a
+{	 text-decoration: none; color: black;}
+
+#viewallhotels a:hover
+{	color: #494949;}
+
+/********************************************Villas********************************************/
+
+
+#villas
+{
+	width: 100%; padding-left: 3%; padding-right: 3%; margin-top: 0%; display: flex; box-sizing: border-box;
+	font-family:MySecondFont; background-color:whitesmoke; 
+}
+
+#villash5
+{	width:45%; margin-top: 10%; margin-right: 25%; font-size: 12px; text-align: justify; font-weight: 600;}
+
+#villash1
+{	width:30%; margin-top: 5%;}
+
+#villas h1
+{	font-size:75px;font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";font-weight: 100;}
+
+#villas1
+{	width:50%; background-color:whitesmoke; padding-top: 5%; box-sizing: border-box;}
+
+#villas2
+{	width:50%; background-color:whitesmoke; padding-top: 5%; box-sizing: border-box;}
+
+.vimg
+{	width:90%; margin-left: 5%; margin-right: 5%;}
+
+.vimg img
+{	width: 100%;}
+
+.v1
+{	display: flex; width:90%; margin-left: 5%; margin-right: 5%;  margin-top: 1%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+
+.v2
+{	width: 70%;}
+
+.v6
+{	width: 30%; text-align: right; font-size: 12.5px; color: #454545; margin-top: 2%;}
+
+.v3
+{	text-decoration: none; color: #101010; font-size: 28px; display: flex; }
+
+.v3:hover
+{	color: #454545;}
+
+.vimg :hover
+{	filter: contrast(1.1);}
+
+.v4
+{	width: 36%;}
+
+
+@media screen and (max-width: 600px) {
+  .v4 {
+	  width: 40%; font-size: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .v4 {
+     width: 50%; font-size: 25px;
+  }
+}
+
+.v44
+{	width:38%;}
+
+
+@media screen and (max-width: 600px) {
+  .v44 {
+	  width: 55%; font-size: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .v44 {
+     width: 53%; font-size: 25px;
+  }
+}
+#viewallVillas 
+{	width:100%; font-size: 30px; padding-right: 2%; box-sizing: border-box; color: black;  padding-bottom: 2%; padding-top: 7%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; text-align: right;
+	background-color:whitesmoke; border-bottom: thin solid black; }
+
+#viewallVillas a
+{	 text-decoration: none; color: black;}
+
+#viewallVillas a:hover
+{	color: #494949;}
+
+/*****************************************************************************/
+
+#w
+{	width: 100%; margin-top: 14%; padding-bottom: 15%; box-sizing: border-box;}
+
+#w1
+{	width: 100%; padding-left: 3%; font-size: 70px; text-align: left; box-sizing: border-box; 
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+
+@media screen and (max-width: 600px) {
+  #w1 {
+	 font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #w1 {
+     font-size: 60px;
+  }
+}
+
+#w2
+{	width: 100%; display: flex; margin-top: 5%;}
+
+#w3
+{	width: 55%; padding-left: 10%; padding-right: 8%; box-sizing: border-box;}
+
+#w3 img
+{	width:100%; filter: contrast(1.2);}
+
+
+@media screen and (max-width: 600px) {
+  #w3 {
+	  width: 50%;padding-left: 3%; padding-right: 9%;box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 992px) {
+  #w3{
+      width: 50%;padding-left: 3%; padding-right: 9%;box-sizing: border-box;
+  }
+}
+#w4
+{	width: 45%; padding-right: 10%; padding-top: 10%; box-sizing: border-box; font-size: 16px; text-align: justify;line-height:150%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; color: #3D3D3D;}
+
+
+@media screen and (max-width: 600px) {
+  #w4 {
+	  width: 50%; font-size: 10px; box-sizing: border-box; padding-top: 10%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #w4 {
+      width: 50%; box-sizing: border-box; font-size: 13px; padding-top: 10%;
+  }
+}
+
+.w44
+{	width:22%;}
+
+
+@media screen and (max-width: 600px) {
+  .w44 {
+	  width: 22%;font-size: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .w44 {
+      width: 22%; font-size: 25px;
+  }
+}
+
+.w5
+{	width:45%; margin-top: 0%;}
+
+#c
+{	width:100%; padding-top: 15%; padding-left: 20%; padding-right: 20%; box-sizing: border-box; font-weight: 400; background-color: whitesmoke;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";  font-size: 35px; text-align: justify;	padding-bottom: 15%; line-height: 120%;}
+#r
+{	width: 94%; margin-left: 3%; margin-right: 3%; padding-top: 10%; box-sizing: border-box; font-size: 21px; text-align: justify;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; display: flex;}
+
+#r1
+{	width:50%; font-weight: 400; padding-bottom: 15%; line-height: 120%; box-sizing: border-box; padding-right: 5%;}
+
+@media screen and (max-width: 600px) {
+  #r1 {
+	  font-size: 18px;line-height: 130%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #r1 {
+     font-size: 18px;line-height: 130%;
+  }
+}
+
+#r2
+{	width:36%; padding-left: 14%; box-sizing: border-box;}
+
+@media screen and (max-width: 992px) {
+  #r2 {
+     padding-left: 11%;
+  }
+}
+
+#r3
+{	width:14%; padding-left: 2%; box-sizing: border-box;}
+
+
+#r4
+{	text-decoration: none; color: #101010; display: flex; font-size: 26px;}
+
+#r4:hover
+{	color: #454545;}
+
+
+.r44
+{	width: 67%;}
+
+
+@media screen and (max-width: 600px) {
+  .r44 {
+	  width: 75%; font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .r44 {
+     width: 75%; font-size: 20px;
+  }
+}
+
+.r45
+{	width:27%;}
+
+
+@media screen and (max-width: 600px) {
+  .r45 {
+	  width: 27%; 
+  }
+}
+@media screen and (max-width: 992px) {
+  .r45 {
+     width: 27%;
+  }
+}
+
+.r24
+{	width: 82%;  box-sizing: border-box;}
+
+@media screen and (max-width: 600px) {
+  .r24 {
+	  width: 100%; font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .r24 {
+     width: 100%; font-size: 20px; 
+  }
+}
+
+.r25
+{	width:16%;}
+
+
+@media screen and (max-width: 600px) {
+  .r25 {
+	  width: 16%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .r25 {
+     width: 16%;
+  }
+}
+
+#lastkobu
+{	width: 100%;}
+
+
+.footer
+{	width: 100%; background-color: whitesmoke; padding-left: 3%; box-sizing: border-box; padding-bottom: 1%; padding-top: 1%;}
+
+.fa
+{	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-weight: 400; 
+	font-size: 11px; color: #000000; text-decoration: none; padding-right: 2%; box-sizing: border-box;}
+.fa:hover
+{	color: #595959;}
+
+@media screen and (max-width: 600px) {
+  .fa {
+     font-size: 5px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .fa {
+     font-size: 8px;
+  }
+}
+
+
+/*****************************************************Privacy**************************************************/
+
+#Privacy
+{	width:100%; margin-top: 10%; box-sizing: border-box; background-color: whitesmoke; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+
+
+#privacy1
+{	width: 100%; font-size:160px; text-align: center; background-color: white; box-sizing: border-box; padding-bottom: 10%; color: black;}
+
+
+#privacy2
+{	width: 100%; font-size:13px; text-align: justify; color: #292929;  box-sizing: border-box; padding-top: 5%; padding-left: 9%; padding-right: 9%;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; padding-bottom: 5%; 
+}
+
+@media screen and (max-width: 992px) {
+  #privacy1 {
+     font-size: 110px; 
+  }
+}
+
+/*****************************************************cookies**************************************************/
+
+#cookies
+{	width:100%; margin-top: 10%; box-sizing: border-box; background-color: whitesmoke; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+
+
+#cookies1
+{	width: 100%; font-size:160px; text-align: center; background-color: white; box-sizing: border-box; padding-bottom: 10%; color: black;}
+
+
+#cookies2
+{	width: 100%; font-size:13px; text-align: justify; color: #292929;  box-sizing: border-box; padding-top: 5%; padding-left: 9%; padding-right: 9%;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; padding-bottom: 5%; 
+}
+
+@media screen and (max-width: 992px) {
+  #cookies1 {
+     font-size: 110px; 
+  }
+}
+
+/*****************************************************disclosure**************************************************/
+
+#diclosure
+{	width: 100%; margin-top: 15%; margin-bottom: 20%; box-sizing: border-box; padding-left: 15%; padding-right: 15%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+
+
+/****************************************Contact-Us****************************************/
+
+
+.contact
+{	width:100%; padding-top: 5%; box-sizing: border-box; padding-bottom: 5%; color: #2C2C2C;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';}
+
+.contact1
+{	width: 50%; margin-top: 3%; background-color: white; margin-left: 25%;}
+
+.contact2
+{	width: 100%; font-size: 18px; font-weight: 100;}
+
+
+@media screen and (max-width: 992px) {
+  .contact1 {
+     width: 60%; margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact1 {
+     width: 80%; margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact2 {
+     font-size: 16px; 
+  }
+}
+
+#about
+{	width:100%; margin-top: 5%; display: flex;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+
+#about1
+{	width: 20%; padding-left: 2%; box-sizing: border-box; font-size: 14px;position:fixed;}
+
+#about2
+{	width: 80%; padding-right: 2%; box-sizing: border-box; margin-left: 20%; padding-left: 2%; text-align: justify;}
+
+#about11
+{	font-size: 20px;}
+
+#about1 a
+{	text-decoration: none; color: #212121;}
+
+#about1 a:hover
+{	color:#AEAEAE;}
+
+#about21
+{	border-bottom: thin solid #AEAEAE; padding-bottom: 3%; box-sizing: border-box; text-align: justify;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
